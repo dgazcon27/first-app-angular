@@ -1,1 +1,6 @@
-<p>article works!</p>
+<div>
+  <div *ngFor="let article of articleList">
+    <p> {{ article.name }} </p>
+    <p>cantidad: {{ article.quantityAvailable }}</p>
+  </div>
+</div>
