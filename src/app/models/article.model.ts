@@ -8,4 +8,5 @@ export interface Article {
   quantityAvailable: number;
   unitPrice: number;
   createdBy: Date;
+  image: string;
 }

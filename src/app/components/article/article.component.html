@@ -1,6 +1,11 @@
 <div>
   <div *ngFor="let article of articleList">
-    <p> {{ article.name }} </p>
+    <div>
+        <img src="{{article.image}}" alt="{{article.name}}">
+    </div>
+    <div>
+        <p> {{ article.name }} </p>
     <p>cantidad: {{ article.quantityAvailable }}</p>
+    </div>
   </div>
 </div>

@@ -8,7 +8,7 @@ import { ArticleService } from 'src/app/services/article.service';
   styleUrls: ['./article.component.sass'],
 })
 export class ArticleComponent {
-  urlImage: string = 'https://api.api-ninjas.com/v1/randomimage?category=food';
+  server: string = 'http://localhost:8989/articles/uploads';
   articleList: Article[] = [];
 
   constructor(private articleService: ArticleService) {}
@@ -25,7 +25,7 @@ export class ArticleComponent {
         
         this.articleList = articles.map((item) => ({
           ...item,
-          image: this.urlImage,
+          image: `${this.server}/${item.image}`,
         }));
         console.log(this.articleList);
       }
