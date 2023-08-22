@@ -9,6 +9,7 @@ import { HeroesComponent } from './heroes/heroes.component';
 import { HeroDetailComponent } from './hero-detail/hero-detail.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ArticleComponent } from './components/article/article.component';
+import { CotizationBoxComponent } from './cotization-box/cotization-box.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { ArticleComponent } from './components/article/article.component';
     HeroDetailComponent,
     DashboardComponent,
     ArticleComponent,
+    CotizationBoxComponent,
   ],
   imports: [
     BrowserModule,
